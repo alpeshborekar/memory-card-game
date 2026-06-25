@@ -2,27 +2,43 @@
 
 A production-quality memory card matching game built with React, Tailwind CSS, and Framer Motion.
 
+## 📸 Screenshots
+
+### Home
+
+![Home](./screenshots/home.png)
+
+### Gameplay
+
+![Gameplay](./screenshots/gameplay.png)
+
+### Win Screen
+
+![Win Screen](./screenshots/win.png)
+
+---
+
 ## Features
 
 - **4×4 grid** — 16 cards, 8 matching pairs
-- **3 difficulty levels** — Easy (1.2s), Medium (0.8s), Hard (0.5s) flip-back delay
+- **3 difficulty levels** — Easy (4×4), Medium (4×5), Hard (6×6)
 - **Live stats** — move counter, timer, matched pairs
-- **Personal bests** — stored per difficulty in localStorage
+- **Personal bests** — stored per difficulty in Local Storage
 - **Victory modal** — completion time, total moves, new best indicator + confetti
-- **Smooth animations** — CSS 3D card flips, Framer Motion entrance animations
-- **Keyboard accessible** — full keyboard navigation, ARIA roles
-- **Responsive** — works from 320px wide to desktop
+- **Smooth animations** — CSS 3D card flips, Framer Motion transitions
+- **Keyboard accessible** — full keyboard navigation
+- **Responsive** — mobile, tablet, and desktop
 
-## Stack
+## Tech Stack
 
 | Tool | Purpose |
-|---|---|
-| React 18 | UI framework |
-| Vite | Build tool |
-| Tailwind CSS | Utility styling |
-| Framer Motion | Entrance animations, modal transitions |
-| Lucide React | Card icons |
-| canvas-confetti | Victory celebration |
+|------|---------|
+| React 18 | UI Framework |
+| Vite | Build Tool |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations |
+| Lucide React | Icons |
+| Canvas Confetti | Win Celebration |
 
 ## Getting Started
 
@@ -33,19 +49,21 @@ npm run dev
 
 ## Project Structure
 
-```
+```text
 src/
-├── components/     # UI components (Header, GameBoard, MemoryCard, WinModal…)
-├── hooks/          # useMemoryGame, useTimer
-├── utils/          # shuffle, storage, helpers
-├── constants/      # gameConfig (difficulty settings, grid size)
-├── data/           # card definitions (icon, label, color)
-└── styles/         # global CSS + Tailwind config
+├── components/
+├── hooks/
+├── utils/
+├── constants/
+├── data/
+└── styles/
 ```
 
 ## Design Principles
 
-- **No gradients** — flat colors, texture through whitespace
-- **Earthy palette** — `#F8F5F0` background, `#D97757` accent, `#7BAE7F` success
-- **Geist typeface** — clean, editorial feel
-- **Reduced motion** — respects `prefers-reduced-motion`
+- Warm earthy color palette
+- No gradients or glassmorphism
+- Clean editorial layout
+- Responsive-first design
+- Accessible interactions
+- Smooth, subtle animations
