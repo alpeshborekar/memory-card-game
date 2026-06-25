@@ -1,4 +1,4 @@
-import { RestartButton } from "./Restartbutton";
+import { RestartButton } from "./RestartButton";
 
 export function Header({ onRestart, isShuffling }) {
   return (
